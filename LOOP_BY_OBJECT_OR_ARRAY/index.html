@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    li{font-size: 30px;}
+</style>
+
+<body>
+
+    <div class="Original_header">
+       CALLING LOOP USING ARRAY OR JSON
+    </div>
+
+
+      
+
+
+    <div class="B">
+
+       
+
+        <h1>Both will have the same mathods</h1>
+
+        <br>
+        <br>
+        <h1>Best way below</h1>
+         <br>
+        <h2>for (let item of ARRAY_NAME) {</h2>
+        <h2>console.log(item);</h2>
+        <h2>}</h2>
+        <br>
+        <br>
+
+        <h1>example :-</h1>
+
+         <ul id="parent">
+            <li>APPLE</li>
+        </ul>
+        
+    </div>
+
+
+
+
+
+    <script>
+
+      
+
+ const Json_name = 
+ [
+    {
+        name:"rahul"
+    },
+    {
+        name:"raju"
+    },
+     {
+        name:"raj"
+    },
+     {
+        name:"roushan"
+    }
+ ]
+
+
+
+//   1st Method 
+
+// for (let i = 0; i < Json_name.length; i++) {
+//     console.log(Json_name[i]);
+// }
+
+
+//   2nd Method 
+     
+
+    const parent = document.querySelector('#parent');
+
+    
+
+
+for (let item of Json_name) {
+    
+    const newitem = document.createElement('li'); //('#id') //('.class')
+
+    newitem.innerText = item.name;
+
+    parent.appendChild(newitem);
+
+
+}
+
+
+
+//   3rd Method 
+
+// Json_name.forEach((item) => {
+//     console.log(item);
+// });
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+    <div class="Original_footer">
+        MADE WITH 🤍 BY &nbsp;
+        <a href="https://rahul.xeel.in" target="_blank" style="text-decoration: none;">
+            <span style="text-decoration: underline;">RAHULXEEL</span>
+        </a>
+    </div>
+
+</body>
+
+</html>
