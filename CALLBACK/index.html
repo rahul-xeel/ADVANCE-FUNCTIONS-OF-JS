@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!--                                      H E A D E R                                           -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+
+
+
+    <div class="Original_header">
+        CALL BACK FUNCTION
+    </div>
+
+
+
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!--                                   M I D D E L   P A R T                                    -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+
+
+
+
+    <div class="B">
+
+        <h1>Passing function as an argument to other function</h1>
+
+        <br>
+        <br>
+         <br>
+        <br>
+
+        <h1 style="color: red;"> function greet(username){</h1>
+        <h1 style="color: red;"> alert("Hello" + username);</h1>
+        <h1 style="color: red;"> }</h1>
+
+         <br>
+        <br>
+         <br>
+        <br>
+
+        <h1 style="color: blue;"> function Askname(funtionname) {</h1>
+        <h1 style="color: blue;"> name = prompt("What is your name ?")</h1>
+        <h1 style="color: blue;"> funtionname(name);</h1>
+        <h1 style="color: blue;"> }</h1>
+         <br>
+        <br>
+         <br>
+        <br>
+        <h1 style="color: green"> Askname(greet);</h1>
+
+
+
+
+    </div>
+
+
+    <script>
+
+
+        function greet(username) {
+            alert("Hello  " + username);
+        }
+
+        function Askname(funtionname) {
+            name = prompt("What's your name ?")
+            funtionname(name);
+        }
+
+
+       setTimeout(() => {
+
+        Askname(greet)
+        
+       }, 2000); 
+
+
+    </script>
+
+
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!--                                    F  O  O  T  E  R                                        -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+
+
+
+
+
+    <div class="Original_footer">
+        MADE WITH 🤍 BY &nbsp; <a href="https://rahul.xeel.in" target="_blank" style=" text-decoration: none;">
+            <p4 style="text-decoration: underline;">RAHULXEEL</p4>
+        </a>
+    </div>
+
+</body>
+
+</html>
