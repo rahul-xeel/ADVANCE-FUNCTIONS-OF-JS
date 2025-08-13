@@ -40,34 +40,25 @@
 
     <div class="B">
 
-        <h1>Passing function as an argument to other function</h1>
+        <h1> Complexity While Passing function as an argument to other function</h1>
 
         <br>
         <br>
-         <br>
+        <br>
         <br>
 
-        <h1 style="color: red;"> function greet(username){</h1>
-        <h1 style="color: red;"> alert("Hello" + username);</h1>
-        <h1 style="color: red;"> }</h1>
+        <h1 style="color: red"> function DataGenerator(id, functionName) { </h1><br>
+        <h1 style="color: red"> if (functionName) { </h1><br>
+        <h1 style="color: red"> setTimeout(() => { </h1><br>
+        <h1 style="color: red"> alert("Data  " + id);</h1><br>
+        <h1 style="color: red">functionName(); </h1><br>
+        <h1 style="color: red"> }, 2000); </h1><br>
+        <h1 style="color: red"> } </h1><br>
+        <h1 style="color: red"> }</h1><br>
+        <br><br><br><br>
+        <h1 style="color: green"> DataGenerator(1,()=>{DataGenerator(2, ()=>{DataGenerator (3,()=>{DataGenerator})})})</h1>
 
-         <br>
-        <br>
-         <br>
-        <br>
-
-        <h1 style="color: blue;"> function Askname(funtionname) {</h1>
-        <h1 style="color: blue;"> name = prompt("What is your name ?")</h1>
-        <h1 style="color: blue;"> funtionname(name);</h1>
-        <h1 style="color: blue;"> }</h1>
-         <br>
-        <br>
-         <br>
-        <br>
-        <h1 style="color: green"> Askname(greet);</h1>
-
-
-
+        
 
     </div>
 
@@ -75,21 +66,27 @@
     <script>
 
 
-        function greet(username) {
-            alert("Hello  " + username);
+
+        function DataGenerator(id, functionName) {
+
+
+            if (functionName) {
+
+                setTimeout(() => {
+                    alert("Data  " + id);
+
+                    functionName();
+
+
+                }, 2000);
+
+            }
+
+
         }
 
-        function Askname(funtionname) {
-            name = prompt("What's your name ?")
-            funtionname(name);
-        }
+DataGenerator(1,()=>{DataGenerator(2, ()=>{DataGenerator (3,()=>{DataGenerator})})})
 
-
-       setTimeout(() => {
-
-        Askname(greet)
-        
-       }, 2000); 
 
 
     </script>
