@@ -47,7 +47,9 @@
 
                                 
                 document.querySelector("#btn").disabled = true;
-                document.querySelector("#btn").style.color = "black";
+                document.querySelector("#btn").innerText = "..Loading Data";
+
+
                 const raw_data = await fetch(url, { method: "GET"});
                 const data = await raw_data.json();
 
@@ -55,7 +57,8 @@
                 document.querySelector("#nametitle").innerText = data.results[0].name.title;
                 document.querySelector("#namefirst").innerText = data.results[0].name.first;
                 document.querySelector("#namelast").innerText = data.results[0].name.last;
-                 document.querySelector("#btn").style.color = "white";
+                 document.querySelector("#btn").disabled = false;
+                document.querySelector("#btn").innerText = "Fetch Data";
 
 
             } catch (error) {
