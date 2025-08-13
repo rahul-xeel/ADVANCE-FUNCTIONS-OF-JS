@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    h1
+    {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+
+
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!--                                      H E A D E R                                           -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+
+
+
+    <div class="Original_header">
+      Async Await
+    </div>
+
+
+
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!--                                   M I D D E L   P A R T                                    -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+
+
+
+
+    <div class="B">
+
+        <h1>An async function is a special kind of JavaScript function that always returns a Promise and allows the use of the await keyword inside it to pause execution until a Promise is settled.</h1>
+
+        <br>
+        <br>
+        <h2> Oopen Console to see result </h2>        <br>
+        
+    </div>
+
+
+<script>
+
+   
+   const Function_A = () => {
+
+   return new Promise((resolve, reject) => {
+    
+      setTimeout(() => {
+
+        console.log("A");
+        resolve("Sucess")
+        
+    }, 2000);
+
+
+   })
+
+   } 
+
+
+
+   const Function_B = () => {
+
+    return new Promise((resolve, reject) => {
+    
+      setTimeout(() => {
+
+        console.log("B");
+        resolve("Sucess")
+        
+    }, 2000);
+
+
+   })
+
+   } 
+
+
+
+   const Function_C = () => {
+
+    return new Promise((resolve, reject) => {
+    
+      setTimeout(() => {
+
+        console.log("C");
+        resolve("Sucess")
+        
+    }, 2000);
+
+
+   })
+
+   } 
+
+
+   const Call = async () => 
+   {
+
+        await Function_A();
+        await Function_B();
+        await Function_C();
+   }
+
+   Call();
+
+</script>
+
+
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!--                                    F  O  O  T  E  R                                        -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+
+
+
+
+
+    <div class="Original_footer">
+        MADE WITH 🤍 BY &nbsp; <a href="https://rahul.xeel.in" target="_blank" style=" text-decoration: none;">
+            <p4 style="text-decoration: underline;">RAHULXEEL</p4>
+        </a>
+    </div>
+
+</body>
+
+</html>
